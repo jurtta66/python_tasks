@@ -1,6 +1,5 @@
 # Метод Монте Карло.
 from datetime import datetime
-import time
 from numba import njit
 import random as r
 import math
