@@ -1,0 +1,13 @@
+{% extends "main/base.html" %}
+{% block title %}
+Добавить человека
+{% endblock %}
+{% block info %}
+    <h1>Добавить человека</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.name }}<br>
+        {{ form.spec }}<br>
+        <button type="submit" class = "btn btn-success">Добавить</button>
+    </form>
+{% endblock %}
